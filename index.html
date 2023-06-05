@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Currency Converter</h1>
+        <div class="input">
+            <div class="selection">
+             <label>From:</label>
+            <select name="currency selector" id="currency-select">
+                <option value="ZAR" id="ZAR-in">ZAR</option>
+                <option value="EUR" id="EUR-in">EUR</option>
+                <option value="GBP" id="GBP-in">GBP</option>
+                <option value="USD" id="USD-in">USD</option>
+            </select>
+
+            <label>To:</label>
+            <select name="currency show" id="currency-show">
+                <option value="ZAR" id="ZAR-out">ZAR</option>
+                <option value="EUR" id="EUR-out">EUR</option>
+                <option value="GBP" id="GBP-out">GBP</option>
+                <option value="USD" id="USD-out">USD</option>
+            </select> <br>   
+            </div>
+
+            <input type="number" id="input-currency">
+            <button id="convert" onclick="convertVal()">Convert</button>
+        </div>
+        <div class="output">
+            <p id="output-currency"></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
